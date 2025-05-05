@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">Expense Tracker</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Expense Tracker</h1>
+        <p>Manage your expenses and income efficiently</p>
+       
+        <form id="expenseForm">
+        <div class="expense-form">
+            <input type="text" id="expenseName" placeholder="Enter your name">
+            <input type="text" id="expenseDesc" placeholder="Enter Expense Description">
+            <input type="number" id="expensePrice" placeholder="Enter Price">
+            <input type="date" id="expenseDate">
+            <button id="addExpense">Add Expense</button>
+        </div>
+         </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expenseList"></tbody>
+        </table>
+
+        <div class="summary">
+            <h3 id="monthlyTotal">Total Monthly Expense: ₹0</h3>
+            <h3 id="memberTotal"><strong>Monthly Expense per Member:</strong></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
